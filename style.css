@@ -1,1 +1,70 @@
 /* In order of top to bottom: title, high scores, begin button/current question, answers, current score */
+
+:root {
+    --purple: rgb(127, 4, 184);
+    --cream: rgb(255, 255, 210);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    background-color: var(--purple);
+    display: flex;
+    height: 4rem;
+    justify-content: space-around;
+}
+
+body {
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    line-height: 1.3;
+}
+
+.question {
+    font-size: 20px;
+    text-align: center;
+}
+
+.answerdiv{
+    display: flex;
+    flex-direction: column;
+}
+
+#timer {
+    font-size: 30px;
+    text-align: center;
+    color: var(--cream);
+    margin-top: 10px;
+}
+
+#title {
+    font-size: 50px;
+    text-align: center;
+    color: var(--cream);
+}
+
+#highscore {
+    font-size: 30px;
+    text-align: center;
+    color: var(--cream);
+    margin-top: 10px;
+}
+
+#answers {
+
+}
+
+#scoretext {
+    text-align: center;
+}
+
+#score {
+
+}

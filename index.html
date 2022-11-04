@@ -7,16 +7,24 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Coding Quiz</title>
   </head>
+  <nav>
+    <span id="timer">0:00</span>
+    <h1 id="title">JavaScript Quiz</h1>
+    <span id="highscore">0</span>
+  </nav>
   <body>
     <div class="question">
-      <h1>Inset Question Here</h1>
+      <h1>Insert Question Here</h1>
     </div>
-    <div>
+    <div class="answerdiv">
         <ul>
-            <p>Insert answers here</p>
+            <li id="answers"></li>
+            <li id="answers"></li>
+            <li id="answers"></li>
+            <li id="answers"></li>
         </ul>
     </div>
-      <p>Score: <span id="todo-count">0</span></p>
+      <p id="scoretext">Score: <span id="score"></span></p>
     <script src="./script.js"></script>
   </body>
 </html>
