@@ -8,30 +8,22 @@
     <title>Coding Quiz</title>
   </head>
   <nav>
-    <span id="timer">0:00</span>
+    <span id="timer">0</span>
     <h1 id="title">JavaScript Quiz</h1>
-    <span id="highscore">0</span>
+    <p id="prevscore">Previous Score: <span id="prevscore"></span></p>
   </nav>
   <body>
     <div class="startdiv">
       <button class="startbtn">Start</button>
     </div>
     <div class="question">
-      <h1>Insert Question Here</h1>
+      <h1 id="questionEl">Insert Question Here</h1>
     </div>
     <div class="answerdiv">
-            <section id="answers">
-              <p id="answerText1">Sample</p>
-            </section>
-            <section id="answers">
-              <p id="answerText2"></p>
-            </section>
-            <section id="answers">
-              <p id="answerText3"></p>
-            </section>
-            <section id="answers">
-              <p id="answerText4"></p>
-            </section>
+            <button id="answer1">Sample</button>
+            <button id="answer2"></button>
+            <button id="answer3"></button>
+            <button id="answer4"></button>
         </ul>
     </div>
       <p id="scoretext">Score: <span id="score"></span></p>

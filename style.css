@@ -34,7 +34,7 @@ body {
     justify-content: center;
 }
 
-.startbtn {
+button {
     background-color: var(--purple);
     color: var(--cream);
     border-radius: 8px;
@@ -46,10 +46,6 @@ body {
     padding: 20px 52px;
     text-align: center;
     margin-top: 0.6em;
-}
-
-.startbtn:hover {
-    background-color: var(--lightpurple);
 }
 
 .question {
@@ -78,14 +74,14 @@ body {
     color: var(--cream);
 }
 
-#highscore {
+#prevscore {
     font-size: 30px;
     text-align: center;
     color: var(--cream);
     margin-top: 10px;
 }
 
-#answers {
+.answerdiv button {
     flex: 0 0 400px;
     padding: 10px;
     text-align: center;
@@ -93,15 +89,16 @@ body {
     border-width: 2px;
     border-radius: 10px;
     background-color: var(--purple);
-  }
-
-  #answers p {
-    text-align: center;
     color: var(--cream);
+    font-size: 20px;
   }
 
 #scoretext {
     text-align: center;
+}
+
+button:hover {
+    background-color: var(--lightpurple);
 }
 
 @media screen and (max-width: 992px) {
