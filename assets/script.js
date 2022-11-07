@@ -69,7 +69,7 @@ function timerStart() {
 function renderQuestion() {
     let isInList = true;
     while(isInList = true){
-        chosenQuestion = questions[Math.floor(Math.random() * questions.length)];
+        chosenQuestion = questions[Math.floor(Math.random() * questions.length - 1)];
         if(alreadyDone.length > 0){
             for(let h = 0; h < alreadyDone.length; h++){
                 if(alreadyDone[h] == chosenQuestion){
@@ -134,6 +134,7 @@ function checkAnswer(correctChoice, chosenAnswer){
     if(correctChoice === chosenAnswer){
         // add to the score
         score += 1;
+        scoreEl.textContent = score;
     } else if (correctChoice != chosenAnswer){
         // subtract time
         countdown -= 5;
@@ -159,7 +160,3 @@ function submitScore() {
 
 // Script for detecting start being clicked
 startButton.addEventListener("click", beginQuiz);
-answer1.addEventListener("click", checkAnswer);
-answer2.addEventListener("click", checkAnswer);
-answer3.addEventListener("click", checkAnswer);
-answer4.addEventListener("click", checkAnswer);
