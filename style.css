@@ -3,6 +3,7 @@
 :root {
     --purple: rgb(127, 4, 184);
     --cream: rgb(255, 255, 210);
+    --lightpurple: rgb(148, 87, 176);
 }
 
 * {
@@ -26,6 +27,29 @@ body {
     flex-direction: column;
     flex: 1 1 0;
     line-height: 1.3;
+}
+
+.startdiv {
+    display: flex;
+    justify-content: center;
+}
+
+.startbtn {
+    background-color: var(--purple);
+    color: var(--cream);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 2em;
+    letter-spacing: 0.21px;
+    line-height: 16px;
+    max-width: 255px;
+    padding: 20px 52px;
+    text-align: center;
+    margin-top: 0.6em;
+}
+
+.startbtn:hover {
+    background-color: var(--lightpurple);
 }
 
 .question {
@@ -71,7 +95,7 @@ body {
     background-color: var(--purple);
   }
 
-  #answerText {
+  #answers p {
     text-align: center;
     color: var(--cream);
   }
