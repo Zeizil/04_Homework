@@ -15,6 +15,7 @@
 nav {
     background-color: var(--purple);
     display: flex;
+    flex-wrap: wrap;
     height: 4rem;
     justify-content: space-around;
 }
@@ -34,7 +35,10 @@ body {
 
 .answerdiv{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    flex: 4;
 }
 
 #timer {
@@ -58,13 +62,36 @@ body {
 }
 
 #answers {
+    flex: 0 0 400px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: var(--purple);
+  }
 
-}
+  #answerText {
+    text-align: center;
+    color: var(--cream);
+  }
 
 #scoretext {
     text-align: center;
 }
 
-#score {
-
+@media screen and (max-width: 992px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+    nav {
+        height: 11rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
 }
